@@ -20,6 +20,7 @@ a{
 }
 #landing{
     background-color: rgb(31, 31, 31);
+    background: url(GrassModified.png);
     /* background-color: black; */
 }
     #landing .container{
@@ -41,36 +42,47 @@ a{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    text-align: center;
-
-                    /* -webkit-filter: brightness(0.8); */
-                    /* filter: brightness(0.8); */
-
-                    background-position: center;
+                    text-align: center;                    
                     background-size: 90vh;
+                    border-radius: 10px;
                     box-shadow: 0 0 1vw #313131;
-
                     margin: 0 2vw 0 0;
                     width: 20vw;
                     height: 75vh;      
                     transition: width .5s;
-                }
-                #landing .container .box-container .box:nth-child(1){
-                    /* background-image: linear-gradient(#313131, #313131), url(https://i.imgur.com/saUtAsI.jpg); */
-                    background-image: url(https://i.imgur.com/saUtAsI.jpg);
-                }
-                #landing .container .box-container .box:nth-child(2){
-                    background-image: ;
-                }
-                #landing .container .box-container .box:nth-child(3){
-                    background-image: ;
+                     
                 }
                     #landing .container .box-container .box:hover{     
                         width:22vw;
                     }
+                #landing .container .box-container .box:nth-child(1){
+                    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+                                url(https://i.imgur.com/saUtAsI.jpg);
+                    background-position: center;
+                }
+                    /* #landing .container .box-container .box:nth-child(1):hover{
+                        background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), 
+                                    url(https://i.imgur.com/saUtAsI.jpg);
+                        background-position: center;
+                    } */
+                #landing .container .box-container .box:nth-child(2){
+                    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+                                      url(https://i.imgur.com/jCtlgEh.png);
+                    background-position: 50% 94%;     
+                    background-size: 55vw;
+                }
+                #landing .container .box-container .box:nth-child(3){
+                    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+                                      url(https://i.imgur.com/nMjGfgA.png);
+                    background-position: center;
+                    background-size: 25vw;
+                }
+                    
                 #landing .container .box-container .box h3{
                     background: white;
+                    opacity: 0.8;
                     margin: 0 1vw 0 1vw;
+                    border-radius: 5px;
                     padding: 1vw .5vw 1vw .5vw;
                     color:black;
                     mix-blend-mode: screen;
