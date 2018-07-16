@@ -21,6 +21,7 @@ a{
 #landing{
     background-color: rgb(31, 31, 31);
     background: url(https://i.imgur.com/D3E0rPB.jpg);
+    background-size: 100vw;
     /* background-color: black; */
 }
     #landing .container{
@@ -56,9 +57,11 @@ a{
                         width:22vw;
                     }
                 #landing .container .box-container .box:nth-child(1){
-                    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
-                                url(https://i.imgur.com/saUtAsI.jpg);
-                    background-position: center;
+                    /* background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+                                url(https://i.imgur.com/saUtAsI.jpg); */
+                        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+                                url(https://i.imgur.com/B8tCZta.png);
+                    background-position: left;
                 }
                     /* #landing .container .box-container .box:nth-child(1):hover{
                         background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), 
