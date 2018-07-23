@@ -20,78 +20,111 @@ a{
 }
 #landing{
     background-color: rgb(31, 31, 31);
-    background: url(https://i.imgur.com/D3E0rPB.jpg);
-    background-size: 100vw;
-    /* background-color: black; */
+    background-image:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
+                       url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/amsterdamStreet.png);
+    background-size: 100vw ;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-    #landing .container{
-        /* background-color:  rgb(104, 104, 104); */
-        /* background-color: rgb(31, 31, 31); */
-        padding: 5vh 5vw 0 5vw;
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 75vh;
+}
+
+    .banner{
+        position: relative;
+        background: white;
+        margin: 0 2vw 0 0;
+        opacity: .68;
+        /* justify-content:     left; */
+        /* align-items: flex-start; */
+        /* align-self: flex-start; */
+        display: flex;
+        /* flex-shrink: inherit; */
+        height:75vh;
+        width: 10vw;        
+        
+        /* text-align: left; */
+        color: black;
+        mix-blend-mode: screen;
     }
-        #landing .container h1{
-            color: white;
-            font-size: 10vh;
-            font-family:'Courier New', Courier, monospace;
-        }
-            #landing .container .box-container{
-                margin: 2vh 0 0 0;
-                display:flex;
-                justify-content: center;
-            }
-                #landing .container .box-container .box{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;                    
-                    background-size: 90vh;
-                    border-radius: 10px;
-                    box-shadow: 0 0 1vw #313131;
-                    margin: 0 2vw 0 0;
-                    width: 20vw;
-                    height: 75vh;      
-                    transition: width .5s;
-                     
-                }
-                    #landing .container .box-container .box:hover{     
-                        width:22vw;
-                    }
-                #landing .container .box-container .box:nth-child(1){
-                    /* background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
-                                url(https://i.imgur.com/saUtAsI.jpg); */
-                        background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
-                                url(https://i.imgur.com/B8tCZta.png);
-                    background-position: left;
-                }
-                    /* #landing .container .box-container .box:nth-child(1):hover{
-                        background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), 
-                                    url(https://i.imgur.com/saUtAsI.jpg);
-                        background-position: center;
-                    } */
-                #landing .container .box-container .box:nth-child(2){
-                    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
-                                      url(https://i.imgur.com/jCtlgEh.png);
-                    background-position: 50% 94%;     
-                    background-size: 55vw;
-                }
-                #landing .container .box-container .box:nth-child(3){
-                    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
-                                      url(https://i.imgur.com/nMjGfgA.png);
-                    background-position: center;
-                    background-size: 25vw;
-                }
-                    
-                #landing .container .box-container .box h3{
-                    background: white;
-                    opacity: 0.8;
-                    margin: 0 1vw 0 1vw;
-                    border-radius: 5px;
-                    padding: 1vw .5vw 1vw .5vw;
-                    color:black;
-                    mix-blend-mode: screen;
-                    font-size: 3vw;
-                    font-family: Arial;
-                }
-#working_on{
-    background-color: brown;
+    .banner p{
+        overflow: visible;   
+        /* justify-content: flex-end;    */
+        /* margin: 0; */
+        font-size: 10vh;
+        /* width: 0; */
+        /* margin: 0; */
+        white-space: nowrap;
+        /* height: 75vh; */
+        position: absolute;
+        /* text-align: left; */
+        transform-origin: 15vh ; 
+        margin-bottom: 10vh;
+        transform: rotate(270deg);
+        /* height: 0; */
+
+        align-self: flex-end;
+        /* transform-origin:0 -8vh;  */
+        font-family:'Courier New', Courier, monospace;
+    }
+
+.box{
+    cursor: -webkit-grab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;                    
+    background-size: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 0 1vw #000000;    
+    width: 20vw;
+    height: 75vh;      
+    transition: width .5s; 
+    margin: 0 4vw 0 0;
+    z-index:0;
+}
+.box_expanded{
+    width: 100vw;
+    height:100vh;
+    z-index: 1;
+    background: black;
+}
+    .box:hover{     
+        width:22vw;
+    }
+    .box h3{
+        background: white;
+        opacity: 0.8;
+        margin: 0 1vw 0 1vw;
+        border-radius: 5px;
+        padding: 1vw .5vw 1vw .5vw;
+        color:black;
+        mix-blend-mode: screen;
+        font-size: 3vw;
+        font-family: Arial;
+    }
+#CurrentProjects{
+    cursor: -webkit-grab;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+            url(https://i.imgur.com/B8tCZta.png);
+    background-position: left;
+}
+#ResumePortfolio{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+                        url(https://i.imgur.com/jCtlgEh.png);
+    background-position: 50% 94%;     
+    background-size: 55vw;
+}
+#WebStuff{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+                        url(https://i.imgur.com/nMjGfgA.png);
+    background-position: center;
+    background-size: 25vw;
+    margin: 0 0 0 0;
 }
