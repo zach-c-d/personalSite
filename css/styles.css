@@ -37,8 +37,10 @@ a{
 }
 
     .banner{
+        background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/banner.svg);
+        background-position: bottom;
         position: relative;
-        background: white;
+        /* background: white; */
         margin: 0 2vw 0 0;
         opacity: .68;
         /* justify-content:     left; */
