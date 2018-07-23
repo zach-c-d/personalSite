@@ -22,7 +22,8 @@ a{
     background-color: rgb(31, 31, 31);
     background-image:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
                        url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/amsterdamStreet.png);
-    background-size: 100vw 100vh;
+    background-size: 100vw ;
+    background-position: bottom;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,40 +31,69 @@ a{
 .container{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
     height: 75vh;
 }
 
-    .container h1{
-        /* position: relative; */
+    .banner{
+        position: relative;
         background: white;
-        margin: 0 0 2vw 0;
-        opacity: .8;
-        align-self: flex-end;
+        margin: 0 2vw 0 0;
+        opacity: .68;
+        /* justify-content:     left; */
+        /* align-items: flex-start; */
+        /* align-self: flex-start; */
+        display: flex;
         /* flex-shrink: inherit; */
-        height:auto;
-        width: 75vh;
-        transform: rotate(270deg);
-        transform-origin:20% 40%;
-        text-align: left;
+        height:75vh;
+        width: 10vw;        
+        
+        /* text-align: left; */
         color: black;
         mix-blend-mode: screen;
+    }
+    .banner p{
+        overflow: visible;   
+        /* justify-content: flex-end;    */
+        /* margin: 0; */
         font-size: 10vh;
+        /* width: 0; */
+        /* margin: 0; */
+        white-space: nowrap;
+        /* height: 75vh; */
+        position: absolute;
+        /* text-align: left; */
+        transform-origin: 15vh ; 
+        margin-bottom: 10vh;
+        transform: rotate(270deg);
+        /* height: 0; */
+
+        align-self: flex-end;
+        /* transform-origin:0 -8vh;  */
         font-family:'Courier New', Courier, monospace;
     }
+
 .box{
+    cursor: -webkit-grab;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;                    
     background-size: 90vh;
     border-radius: 10px;
-    box-shadow: 0 0 1vw #313131;
-    margin: 0 2vw 0 0;
+    box-shadow: 0 0 1vw #000000;    
     width: 20vw;
     height: 75vh;      
     transition: width .5s; 
+    margin: 0 4vw 0 0;
+    z-index:0;
+}
+.box_expanded{
+    width: 100vw;
+    height:100vh;
+    z-index: 1;
+    background: black;
 }
     .box:hover{     
         width:22vw;
@@ -79,18 +109,19 @@ a{
         font-size: 3vw;
         font-family: Arial;
     }
-.box:nth-child(1){
+#CurrentProjects{
+    cursor: -webkit-grab;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
             url(https://i.imgur.com/B8tCZta.png);
     background-position: left;
 }
-.box:nth-child(2){
+#ResumePortfolio{
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
                         url(https://i.imgur.com/jCtlgEh.png);
     background-position: 50% 94%;     
     background-size: 55vw;
 }
-.box:nth-child(3){
+#WebStuff{
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
                         url(https://i.imgur.com/nMjGfgA.png);
     background-position: center;
