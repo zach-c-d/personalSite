@@ -17,15 +17,13 @@ body{
     background-image:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
                        url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/amsterdamStreet.png);
 }
-nav{
+/* nav{
     height: 10vh;
     margin: 0;  
     display:flex;
     align-items: center;
     justify-content: space-around;
     box-sizing: content-box;
-    /* background: grey; */
-    /* border-bottom: 5px solid white; */
 }
     nav ul{
         display: flex;
@@ -56,7 +54,6 @@ nav{
         .selected{
             background: rgba(255, 255, 255, 0.33);
             box-shadow: 0 0 3vw #000000;    
-            /* border-radius: 5px 5px 0 0;  */
             border-bottom: 5px solid white;
             mix-blend-mode: screen;
         }
@@ -70,11 +67,10 @@ nav{
         .selected:hover{
             background: rgba(255, 255, 255, 0.33);
             box-shadow: 0 0 3vw #000000;    
-            /* border-radius: 5px 5px 0 0;  */
             border-bottom: 5px solid white;
             color:white;
             mix-blend-mode: screen;
-        }
+        } */
 
 .content{
     display: flex;
