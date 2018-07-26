@@ -26,15 +26,15 @@ a{
 .container{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
 }
     .contactBox{
         display: flex;
         flex-direction: row;
-        /* width: 90vw; */
         height:38vh;
-        /* transform: translateX(+18vw); */
         background-position: center;
+        transform: translateX(+5vw);
         margin: 0 0 0 0;
     }
         .faceBox{
@@ -47,7 +47,7 @@ a{
             margin-left: 3vw;
             display: flex;
             flex-direction: column;
-            /* width: 50vw; */
+            width: 40vw;
         }
             .contactInfo h3{
                 font-size: 3vw;
@@ -55,9 +55,9 @@ a{
             }
             .contactInfo ul{
                 border-top: solid 2px white;
-                /* margin-top: 2vh; */
                 padding-top: 3vh;
                 padding-left: 2vw;
+                height: 50vh;
                 background: rgb(70, 70, 70);
             }
             .contactInfo ul li{
