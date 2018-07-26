@@ -44,6 +44,64 @@ a{
         height:75vh;
         width: 10vw;        
     }
+    nav{
+        height: 10vh;
+        margin: 0;  
+        display:flex;
+        align-items: center;
+        justify-content: space-around;
+        box-sizing: content-box;
+        /* background: grey; */
+        /* border-bottom: 5px solid white; */
+    }
+        nav ul{
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul a {
+            margin-right: 4vw;
+            width: 13vw;
+        }
+            nav ul a li{
+                list-style-type: none;
+                width: 13vw;
+                height: 8vh;
+                margin-top: 2vh;
+                transition: .5s background;
+                
+                border-bottom: 5px solid white; 
+                
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                justify-content: flex-end; 
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .selected{
+                background: rgba(255, 255, 255, 0.33);
+                box-shadow: 0 0 3vw #000000;    
+                /* border-radius: 5px 5px 0 0;  */
+                border-bottom: 5px solid white;
+                mix-blend-mode: screen;
+            }
+            
+            nav ul a:nth-last-child(1){ margin: 0;}
+            nav ul a li:hover{
+                background: white;
+                color:black;
+                opacity: 1;
+            }
+            .selected:hover{
+                background: rgba(255, 255, 255, 0.33);
+                box-shadow: 0 0 3vw #000000;    
+                /* border-radius: 5px 5px 0 0;  */
+                border-bottom: 5px solid white;
+                color:white;
+                mix-blend-mode: screen;
+            }
 .box{
     cursor: -webkit-grab;
     display: flex;
@@ -82,8 +140,9 @@ a{
 #CurrentProjects{
     cursor: -webkit-grab;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
-            url(https://i.imgur.com/B8tCZta.png);
-    background-position: left;
+            url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/ChalmersCardsBatch.jpg);
+    background-position: bottom;
+    background-size: 100vh;
 }
 #ResumePortfolio{
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
