@@ -1,0 +1,19 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
+                       url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/amsterdamStreet.png);
+    background-position: bottom;
+}
+nav{
+    height: 10vh;
+    margin: 0;  
+    float: left;
+    transform: translateX(-35vw);
+    position: absolute;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: content-box;
+}

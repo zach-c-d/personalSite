@@ -13,11 +13,6 @@ a{
     align-items: center;
     justify-content: center;
 }
-.container{
-    width: 80vw;
-    height: 95vh;
-    margin: 5vh 10vw 5vh 10vw;
-}
 #landing{
     background-color: rgb(31, 31, 31);
     background-image:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
@@ -34,6 +29,7 @@ a{
     justify-content: center;
     flex-direction: row;
     height: 75vh;
+    transform: translateX(+10vw);   
 }
 
     .banner{
@@ -47,6 +43,9 @@ a{
     nav{
         height: 10vh;
         margin: 0;  
+        float: left;
+        transform: translateX(-35vw);
+        position: absolute;
         display:flex;
         align-items: center;
         justify-content: space-around;

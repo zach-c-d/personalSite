@@ -83,6 +83,7 @@ nav{
     flex-direction: row;
     height: 75vh;
     margin-top: 5vh;
+    transform: translateX(+10vw);
 }
     .box{
         display: flex;
