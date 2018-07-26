@@ -23,136 +23,48 @@ a{
     justify-content: center;
     align-items: center;
 }
- .container{
+.container{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: row;
-    height: 75vh;
-    transform: translateX(+10vw);   
 }
-
-/*    .banner{
-        background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/banner.png);
-        background-position: right;
-        margin: 0 2vw 0 0;
-        opacity: .68;
-        height:75vh;
-        width: 10vw;        
+    .contactBox{
+        display: flex;
+        flex-direction: row;
+        /* width: 90vw; */
+        height:38vh;
+        /* transform: translateX(+18vw); */
+        background-position: center;
+        margin: 0 0 0 0;
     }
-    nav{
-        height: 10vh;
-        margin: 0;  
-        float: left;
-        transform: translateX(-35vw);
-        position: absolute;
-        display:flex;
-        align-items: center;
-        justify-content: space-around;
-        box-sizing: content-box;
-        /* background: grey; */
-        /* border-bottom: 5px solid white; */
-    }
-        nav ul{
+        .faceBox{
+            background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/pixelFace.png);
+            background-size: 38vh;
+            height: 38vh;
+            width: 38vh;
+        }
+        .contactInfo{
+            margin-left: 3vw;
             display: flex;
             flex-direction: column;
+            /* width: 50vw; */
         }
-        nav ul a {
-            margin-right: 4vw;
-            width: 13vw;
-        }
-            nav ul a li{
-                list-style-type: none;
-                width: 13vw;
-                height: 8vh;
-                margin-top: 2vh;
-                transition: .5s background;
-                
-                border-bottom: 5px solid white; 
-                
-                display: flex;
-                flex-direction: column;
-                align-items: baseline;
-                justify-content: flex-end; 
-                text-align: center;
+            .contactInfo h3{
+                font-size: 3vw;
+                line-height: 70%;
+            }
+            .contactInfo ul{
+                border-top: solid 2px white;
+                /* margin-top: 2vh; */
+                padding-top: 3vh;
+                padding-left: 2vw;
+                background: rgb(70, 70, 70);
+            }
+            .contactInfo ul li{
+                font-size: 1vw; 
+            }
+            .contactInfo ul li a{
+                font-size: 1.5vw;
                 text-decoration: none;
                 color: white;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
             }
-            .selected{
-                background: rgba(255, 255, 255, 0.33);
-                box-shadow: 0 0 3vw #000000;    
-                /* border-radius: 5px 5px 0 0;  */
-                border-bottom: 5px solid white;
-                mix-blend-mode: screen;
-            }
-            
-            nav ul a:nth-last-child(1){ margin: 0;}
-            nav ul a li:hover{
-                background: white;
-                color:black;
-                opacity: 1;
-            }
-            .selected:hover{
-                background: rgba(255, 255, 255, 0.33);
-                box-shadow: 0 0 3vw #000000;    
-                /* border-radius: 5px 5px 0 0;  */
-                border-bottom: 5px solid white;
-                color:white;
-                mix-blend-mode: screen;
-            } */
-/* .box{
-    cursor: -webkit-grab;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;                    
-    background-size: 90vh;
-    border-radius: 10px;
-    box-shadow: 0 0 1vw #000000;    
-    width: 20vw;
-    height: 75vh;      
-    transition: width .5s; 
-    margin: 0 4vw 0 0;
-    z-index:0;
-}
-.box_expanded{
-    width: 100vw;
-    height:100vh;
-    z-index: 1;
-    background: black;
-}
-    .box:hover{     
-        width:22vw;
-    }
-    .box h3{
-        background: white;
-        opacity: 0.8;
-        margin: 0 1vw 0 1vw;
-        border-radius: 5px;
-        padding: 1vw .5vw 1vw .5vw;
-        color:black;
-        mix-blend-mode: screen;
-        font-size: 3vw;
-        font-family: Arial;
-    } */
-#CurrentProjects{
-    cursor: -webkit-grab;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
-            url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/ChalmersCardsBatch.jpg);
-    background-position: bottom;
-    background-size: 100vh;
-}
-#ResumePortfolio{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
-                        url(https://i.imgur.com/jCtlgEh.png);
-    background-position: 50% 94%;     
-    background-size: 55vw;
-}
-#WebStuff{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
-                        url(https://i.imgur.com/nMjGfgA.png);
-    background-position: center;
-    background-size: 25vw;
-    margin: 0 0 0 0;
-}

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;  
     text-decoration: none;
+    list-style-type: none;
 }
 body{
     display: flex;
@@ -14,7 +15,7 @@ body{
     align-items: center;
     background-image:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
                        url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/amsterdamStreet.png);
-    background-size:100vw;;
+    background-size:100vw;
     background-position: bottom;
 }
 nav{
@@ -38,7 +39,7 @@ nav ul a {
     width: 13vw;
 }
     nav ul a li{
-        list-style-type: none;
+        /* list-style-type: none; */
         width: 13vw;
         height: 8vh;
         margin-top: 2vh;
@@ -51,7 +52,7 @@ nav ul a {
         align-items: baseline;
         justify-content: flex-end; 
         text-align: center;
-        text-decoration: none;
+        /* text-decoration: none; */
         color: white;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
