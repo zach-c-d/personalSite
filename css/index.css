@@ -48,6 +48,7 @@ a{
             display: flex;
             flex-direction: column;
             width: 40vw;
+            transform:translateY(4vh);
         }
             .contactInfo h3{
                 font-size: 3vw;
@@ -55,13 +56,15 @@ a{
             }
             .contactInfo ul{
                 border-top: solid 2px white;
+                margin-top: 1vh;
                 padding-top: 3vh;
                 padding-left: 2vw;
-                height: 50vh;
-                background: rgb(70, 70, 70);
+                height: 18vh;
+                background: rgba(70, 70, 70, 0.9);
             }
             .contactInfo ul li{
-                font-size: 1vw; 
+                font-size: 1.5vw; 
+                line-height: 150%;
             }
             .contactInfo ul li a{
                 font-size: 1.5vw;
