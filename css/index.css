@@ -23,7 +23,7 @@ a{
     justify-content: center;
     align-items: center;
 }
-.container{
+ .container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +32,7 @@ a{
     transform: translateX(+10vw);   
 }
 
-    .banner{
+/*    .banner{
         background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/banner.png);
         background-position: right;
         margin: 0 2vw 0 0;
@@ -100,8 +100,8 @@ a{
                 border-bottom: 5px solid white;
                 color:white;
                 mix-blend-mode: screen;
-            }
-.box{
+            } */
+/* .box{
     cursor: -webkit-grab;
     display: flex;
     justify-content: center;
@@ -135,7 +135,7 @@ a{
         mix-blend-mode: screen;
         font-size: 3vw;
         font-family: Arial;
-    }
+    } */
 #CurrentProjects{
     cursor: -webkit-grab;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
