@@ -1,6 +1,8 @@
-.resumeCV{
+div .resumeCV{
     background-image: url();
 }
 .portfolio{
-    background-image: url();
+    background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/portfolio.png);
+    background-size: 30vw;
+    background-position: center;
 }
