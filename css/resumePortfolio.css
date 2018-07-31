@@ -1,8 +1,13 @@
-div .resumeCV{
+ .resumeCV{
     background-image: url();
 }
 .portfolio{
     background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/portfolio.png);
     background-size: 30vw;
     background-position: center;
+}
+@media screen and (max-width: 900px){
+    .content{
+        transform: translateY(+19vh);
+    }
 }

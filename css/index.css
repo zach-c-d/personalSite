@@ -71,3 +71,47 @@ a{
                 text-decoration: none;
                 color: white;
             }
+@media screen and (max-width: 900px){
+    .container{
+        /* background: rgba(70, 70, 70, 0.9); */
+        justify-content: center;
+        align-items: center;
+        padding:0;
+        margin:0;
+        width: 95vw;
+        transform: translateX(-5vw);
+    }
+    .faceBox{
+        background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/pixelFace.png);
+        background-size: 50vh;
+        background-position: 90%;
+        height: 50vh;
+        width: 30vw;
+        margin: 0;
+        padding: 0;
+    }
+    .contactInfo{
+        transform: translateY(0vh);
+        background: rgba(70, 70, 70, 0.9);
+        width: 55vw;
+        height: 50vh;
+        padding: 2vh;
+        
+    }
+    .contactInfo h3{
+        font-size: 12vw;
+        line-height: 90%;
+        display: none;
+    }
+    .contactInfo ul{
+        background: transparent;
+        overflow-wrap: break-word;
+        border: none;
+    }
+    .contactInfo ul li{
+        font-size: 6vw;
+    }
+    .contactInfo ul li a{
+        font-size: 6vw;
+    }
+}
