@@ -110,8 +110,10 @@ a{
     }
     .contactInfo ul li{
         font-size: 6vw;
+        color: white;
     }
     .contactInfo ul li a{
         font-size: 6vw;
+        color: white;
     }
 }
