@@ -128,7 +128,7 @@ nav ul a {
         .box:hover .box-blurb{width:22vw; } 
         .box .baseCount{margin:0;}
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1200px){
     body{
         flex-direction: column;
         align-items: center;
