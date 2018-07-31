@@ -6,7 +6,7 @@
     background-size: 30vw;
     background-position: center;
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 40em){
     .content{
         transform: translateY(+19vh);
     }
