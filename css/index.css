@@ -42,13 +42,15 @@ a{
             /* background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/pixelFace.png); */
             /* background-size: 38vh; */
             height: 38vh;
-            width: 38vh;
+            width: 38vw;
         }
-        .contactInfo{
-            /* margin-left: 3vw; */
+        .contactBox{
             display: flex;
             flex-direction: column;
-            /* width: 40vw; */
+        }
+        .contactInfo{
+            display: flex;
+            flex-direction: column;
             transform:translateY(4vh);
         }
             .contactInfoTitle{
