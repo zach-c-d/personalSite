@@ -22,7 +22,7 @@ a{
 .container{
     display: flex;
     flex-direction: row;
-    transform: translateX(+0vw);
+    transform: translateX(+5em);
     width:50vw;
 }
     
@@ -36,9 +36,9 @@ a{
         .faceBox{
             background-color: grey;
             background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/pixelFace.png);
-            background-size: 16vh;
+            background-size: cover;
             height: 38vh;
-            width: 38vw;
+            width: 20vw;
         }
         
         .contactBox{
@@ -54,17 +54,18 @@ a{
         .contactInfo{
             display: flex;
             flex-direction: column;
-            
             height: 29vh;
         }
         .contactInfo div p{
             transform:translateY(4vh);
             border-top: solid 2px white;
             padding: 1vw;
+            padding-bottom: 3em;
             background-color: rgba(65, 65, 65, 0.9);
         }
         .contactInfo a{
-            margin-top: 5vh;
+            transform: translateY(+2em);
+            margin: auto;
             text-align: center;
             padding: 10px;
             width: 250px;
@@ -111,7 +112,7 @@ a{
         background: transparent;
     }
     .contactInfo a{
-        transform: translateY(+1.4em);
+        transform: translateY(-1em);
         margin: auto;
     }
 }

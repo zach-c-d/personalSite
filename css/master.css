@@ -153,13 +153,13 @@ nav ul a {
     nav ul{
         align-items: center;
         justify-content: space-around;
+        transform: translateX(-1em);
         flex-direction: row;
         width: 100vw;
-        margin-right: 5vw;
         
     }
     nav ul a li{
-        width: 20vw;
+        width: 25vw;
         height: 15vh;
         font-size: 4vw;
     }
