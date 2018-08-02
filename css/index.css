@@ -110,7 +110,8 @@ a{
     .contactInfo div p{
         background: transparent;
     }
-    .contactinfo a{
+    .contactInfo a{
+        transform: translateY(+1.4em);
         margin: auto;
     }
 }
