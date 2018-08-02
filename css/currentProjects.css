@@ -21,16 +21,17 @@ body{
     .chalmersCard{
         background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/ChalmersCardsBatch.jpg);
         background-position: bottom;
-        background-size: 30vw;
+        background-size: cover;
     }
     .arduino-Workshop{
         background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/Walker.gif);
         background-position: bottom;
+        background-size: cover;
     }
     .baseCount{
         background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/basecountScreenshot.png);
         background-position: center;
-        background-size: 22vw;
+        background-size: cover;
     }
 @media screen and (max-width: 52em){
     

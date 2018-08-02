@@ -14,11 +14,7 @@ a{
     justify-content: center;
 }
 #landing{
-    background-color: rgb(31, 31, 31);
-    background-image:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),
-                       url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/amsterdamStreet.png);
-    background-size: 100vw ;
-    background-position: bottom;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,52 +35,49 @@ a{
     }
         .faceBox{
             background-color: grey;
-            /* background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/pixelFace.png); */
-            /* background-size: 38vh; */
+            background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/pixelFace.png);
+            background-size: 16vh;
             height: 38vh;
             width: 38vw;
         }
+        
         .contactBox{
             display: flex;
             flex-direction: column;
+            margin-left:1vw;
+            width:30vw;
         }
-        .contactInfo{
-            display: flex;
-            flex-direction: column;
-            transform:translateY(4vh);
-        }
-            .contactInfoTitle{
+        .contactInfoTitle{
                 font-size: 3vw;
                 line-height: 70%;
             }
-            .contactInfo ul{
-                display:flex;
-                flex-direction: row;
-                border-top: solid 2px white;
-                margin-top: 1vh;
-                padding-top: 3vh;
-                padding-left: 2vw;
-                height: 28vh;
-                background: rgba(70, 70, 70, 0.9);
-            }
-            .contactInfo ul li{
-                font-size: 1.5vw; 
-                line-height: 150%;
-                margin-top: 3vh;
-                margin-left: 3vh;
-                text-align: center;
-                transition: background .5s;
-                border-radius: 1vh;
-            }
-            .contactInfo ul li a{
-                font-size: 1.5em;
-                text-decoration: none;
-                padding: 1vh;
-                line-height: 110%;
-            }
-            .contactInfo ul li:hover{
-                background: rgb(107, 107, 107);
-            }
+        .contactInfo{
+            display: flex;
+            flex-direction: column;
+            
+            height: 29vh;
+        }
+        .contactInfo div p{
+            transform:translateY(4vh);
+            border-top: solid 2px white;
+            padding: 1vw;
+            background-color: rgba(65, 65, 65, 0.9);
+        }
+        .contactInfo a{
+            margin-top: 5vh;
+            text-align: center;
+            padding: 10px;
+            width: 250px;
+            border-radius: 15px;
+            border: 3px rgb(163, 163, 163) solid;
+            background:black;
+            transition: background 0.5s;
+        }
+        .contactInfo a:hover{
+            background: rgb(163, 163, 163);
+            color: black;
+        }
+            
 
 @media screen and (max-width: 52em){
     .container{
