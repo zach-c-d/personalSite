@@ -71,11 +71,11 @@ a{
             width: 250px;
             border-radius: 15px;
             border: 3px rgb(163, 163, 163) solid;
-            background:black;
+            background:rgba(53, 53, 53, 0.7);
             transition: background 0.5s;
         }
         .contactInfo a:hover{
-            background: rgb(163, 163, 163);
+            background: rgba(163, 163, 163, 0.7);
             color: black;
         }
             
