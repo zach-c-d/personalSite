@@ -1,17 +1,16 @@
 
 import React, { Component } from "react";
 import styled from "styled-components";
-// import { NavLink, Route } from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
 
 export default class Content extends Component {
     render() {
         return (
             <ContentBox>
-                {/* <div className="content">
-                    <Route exact path="/" component={Home} />
-                    <Route path="/Stuff" component={Stuff} />
-                    <Route path="/Contact" component={Contact} />
-                </div> */}
+                <div className="content">
+                    <Route exact path="/" component={About} />
+                    <Route path="/Stuff" component={Projects} />
+                </div>
             </ContentBox>
 
         );
