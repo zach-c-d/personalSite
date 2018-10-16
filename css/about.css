@@ -23,7 +23,6 @@ a{
     display: flex;
     flex-direction: row;
     transform: translateX(+5em);
-    width:50vw;
 }
     
     .contactBox{
@@ -37,8 +36,8 @@ a{
             background-color: grey;
             background-image: url(https://raw.githubusercontent.com/zacharydonsky/personalSite/master/assets/pixelFace.png);
             background-size: cover;
-            height: 38vh;
-            width: 20vw;
+            height: 300px;
+            width: 300px;
         }
         
         .contactBox{
