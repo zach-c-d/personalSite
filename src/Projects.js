@@ -4,7 +4,9 @@ import styled from "styled-components";
 export default class Projects extends Component{
     render(){
         return(
-            <ProjectsContainer></ProjectsContainer>
+            <ProjectsContainer>
+                <h1>test</h1>
+            </ProjectsContainer>
         );
     }
 }

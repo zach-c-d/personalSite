@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default class AboutMe extends Component {
     render() {
         return (
-            <AboutContainer></AboutContainer>
+            <AboutContainer>Hello!</AboutContainer>
         );
     }
 }
