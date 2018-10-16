@@ -8,7 +8,7 @@ export default class NavigationBar extends Component {
             <NavBarContainer>
                 <ul className="header">
                     <li><NavLink exact to="/">About Me</NavLink></li>
-                    <li><NavLink to="/Projects">Projects</NavLink>"></li>
+                    <li><NavLink to="/pages/Projects">Projects</NavLink>"></li>
                 </ul>
             </NavBarContainer>
 

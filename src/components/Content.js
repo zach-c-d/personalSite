@@ -2,8 +2,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import {HashRouter, Route } from "react-router-dom";
-import About from "../AboutMe.js"
-import Projects from "../Projects.js"
+import About from "./pages/AboutMe.js"
+import Projects from "./pages/Projects.js"
 
 export default class Content extends Component {
     render() {
@@ -12,7 +12,7 @@ export default class Content extends Component {
             <HashRouter>
                 <div className="content">
                     <Route exact path="/" component={About} />
-                    <Route path="/" component={Projects} />
+                    <Route path="/pages/Projects" component={Projects} />
                 </div>
             </HashRouter>
             </ContentBox>
