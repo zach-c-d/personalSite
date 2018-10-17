@@ -8,22 +8,21 @@ import Projects from "./pages/Projects.js"
 export default class Content extends Component {
     render() {
         return (
-            <ContentBox>
             <HashRouter>
-                <div className="content">
+            <ContentBox>
+                <div >
                     <Route exact path="/" component={About} />
                     <Route path="/pages/Projects" component={Projects} />
                 </div>
-            </HashRouter>
             </ContentBox>
+            </HashRouter>
 
         );
     }
 }
 
 const ContentBox = styled.div`
-    width:90vw;
-    height:100px;
+    background-color: white;
     ul{
         background-color: black;
         padding: 0;

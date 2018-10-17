@@ -8,36 +8,43 @@ export default class NavigationBar extends Component {
             <NavBarContainer>
                 <ul className="header">
                     <li><NavLink exact to="/">About Me</NavLink></li>
-                    <li><NavLink to="/pages/Projects">Projects</NavLink>"></li>
+                    <li><div></div></li>
+                    <li><NavLink to="/pages/Projects">Projects</NavLink></li>
                 </ul>
             </NavBarContainer>
-
-        );
+      );
     }
 }
 
 const NavBarContainer = styled.div`
-    width:90vw;
-    height:100px;
+margin: 20px;
     ul{
-        background-color: #111;
+        display:flex;
+        flex-direction: row;
         padding: 0;
         li{
-            display: inline;
             list-style-type: none;
             margin: 0;
+
+            div{
+                width:10px;
+            }
             a{
-                color: #FFF;
+                background-color: rgba(255,255,255,0.8);
+                border-bottom: 2px solid white;
+                color: black;
                 font-weight: bold;
                 text-decoration: none;
+                width: 80px;
                 padding: 20px;
+                
                 display: inline-block;
             }
             .active{
-                background-color: #0099FF;
+                color: white;
+                background-color: rgba(0,153,255,100);
             }
         }
         
     }
-
 `
