@@ -8,7 +8,8 @@ export default class NavigationBar extends Component {
             <NavBarContainer>
                 <ul className="header">
                     <li><NavLink exact to="/">About Me</NavLink></li>
-                    <li><NavLink to="/pages/Projects">Projects</NavLink>"></li>
+                    <div></div>
+                    <li><NavLink to="/pages/Projects">Projects</NavLink></li>
                 </ul>
             </NavBarContainer>
 
@@ -22,6 +23,9 @@ const NavBarContainer = styled.div`
     ul{
         background-color: #111;
         padding: 0;
+        div{
+            width:10px;
+        }
         li{
             display: inline;
             list-style-type: none;
