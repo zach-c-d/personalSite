@@ -24,7 +24,7 @@ const NavBarContainer = styled.div`
         background-color: #111;
         padding: 0;
         div{
-            width:10px;
+            width:10px; 
         }
         li{
             display: inline;
@@ -41,7 +41,5 @@ const NavBarContainer = styled.div`
                 background-color: #0099FF;
             }
         }
-        
     }
-
 `
