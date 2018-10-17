@@ -6,22 +6,21 @@ export default class NavigationBar extends Component {
     render() {
         return (
             <NavBarContainer>
-                <ul className="header">
+                <ul>
                     <li><NavLink exact to="/">About Me</NavLink></li>
                     <div></div>
                     <li><NavLink to="/pages/Projects">Projects</NavLink></li>
                 </ul>
             </NavBarContainer>
-
         );
     }
 }
 
 const NavBarContainer = styled.div`
-    width:90vw;
-    height:100px;
     ul{
-        background-color: #111;
+        display:flex;
+        justify-content: center;
+        align-items: center;
         padding: 0;
         div{
             width:10px; 
@@ -29,16 +28,19 @@ const NavBarContainer = styled.div`
         li{
             display: inline;
             list-style-type: none;
+            background-color:white;
             margin: 0;
             a{
                 color: #FFF;
                 font-weight: bold;
                 text-decoration: none;
+                color: black;
                 padding: 20px;
                 display: inline-block;
             }
             .active{
                 background-color: #0099FF;
+                color:white;
             }
         }
     }

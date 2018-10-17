@@ -1,31 +1,37 @@
 import React, { Component } from "react";
 import {
-    HashRouter
+    HashRouter,
+    navBar
 } from "react-router-dom";
 import Navigation from './components/Navigation.js'
 import Content from './components/Content.js'
 import styled from 'styled-components'
-
+import Img from 'react-images'
 class Main extends Component {
     render() {
         return (
-            <backgroundContainer>
-            <HashRouter>
-                <navBar>
-                    <Navigation></Navigation>
-                    <Content></Content>
-                </navBar>
-            </HashRouter>
-            </backgroundContainer>
+            <MainContainer>
+                <HashRouter>
+                    <navBar>
+                        <Navigation></Navigation>
+                        <Content></Content>
+                    </navBar>
+                </HashRouter>
+            </MainContainer>
+            
         );
     }
 }
 export default Main;
 
-const backgroundContainer = styled.div`
+const backgroundImage = () => <Img src="./assets/amsterdamStreet.jpg" />
+
+const MainContainer = styled.div`
+    display:flex;
+    justify-content: center;
+    align-content: center;
     width:100vw;
     height:100vh;
-    position: static;
-    background-color: black;
+    /* background: url({backgroundImage}); */
 `
 

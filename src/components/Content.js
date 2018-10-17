@@ -22,8 +22,6 @@ export default class Content extends Component {
 }
 
 const ContentBox = styled.div`
-    width:90vw;
-    height:100px;
     ul{
         background-color: black;
         padding: 0;
