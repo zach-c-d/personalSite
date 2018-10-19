@@ -8,14 +8,14 @@ import Projects from "./pages/Projects.js"
 export default class Content extends Component {
     render() {
         return (
-            <ContentBox>
             <HashRouter>
-                <div className="content">
+            <ContentBox>
+                <div >
                     <Route exact path="/" component={About} />
                     <Route path="/pages/Projects" component={Projects} />
                 </div>
-            </HashRouter>
             </ContentBox>
+            </HashRouter>
 
         );
     }

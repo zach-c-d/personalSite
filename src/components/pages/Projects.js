@@ -12,4 +12,5 @@ export default class Projects extends Component{
 }
 
 const ProjectsContainer = styled.div`
+    background-color:white;
 `
