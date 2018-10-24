@@ -11,9 +11,9 @@ export default class NavigationBar extends Component {
         return (
             <NavBarContainer>
                 <ul>
-                    <li><NavLink exact to="/">Page One</NavLink></li>
+                    <li><NavLink exact to="/"></NavLink></li>
                     <div></div>
-                    <li><NavLink to="/pages/Projects">Page Two</NavLink></li>
+                    <li><NavLink to="/pages/Projects"></NavLink></li>
                 </ul>
             </NavBarContainer>
         );
@@ -21,25 +21,27 @@ export default class NavigationBar extends Component {
 }
 
 const NavBarContainer = styled.div`
+    background: linear-gradient(90deg, rgba(28, 28, 28, 0) -400.5%, #1E1E1E 50%);
+    border-radius: 0px 2px 2px 0px;
+    height: 100vh;
+    width: 100px;
     ul{
         display:flex;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-around;
+        align-items: center;
         div{
             width:10px; 
         }
         li{
             list-style-type: none;
-            background-color: rgba(255,255,255,0.1);
-            border-bottom: white solid 4px;
             transition: background-color 0.5s;
+            width:33px;
+            height:33px;
+            border-radius:50%;
+            background: white;
             a{
-                font-family: roboto, Arial, Helvetica, sans-serif;
-                color: white;
-                font-weight: bold;
-                text-decoration: none;
-                padding: 20px 20px 1px 0;
-                display: inline-block;
             }
             /* larger font when landscape */
             @media screen and (orientation:landscape){

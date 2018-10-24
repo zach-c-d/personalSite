@@ -26,8 +26,9 @@ export default Main;
 
 const MainContainer = styled.div`
     display:flex;
-    justify-content: center;
-    align-content: center;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-content: center; */
     width:100vw;
     height:100vh;
     background: url(${BackgroundImage}) center center;

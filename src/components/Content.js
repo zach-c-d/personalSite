@@ -22,25 +22,7 @@ export default class Content extends Component {
 }
 
 const ContentBox = styled.div`
-    ul{
-        background-color: black;
-        padding: 0;
-        li{
-            display: inline;
-            list-style-type: none;
-            margin: 0;
-            a{
-                color: #FFF;
-                font-weight: bold;
-                text-decoration: none;
-                padding: 20px;
-                display: inline-block;
-            }
-            .active{
-                background-color: #0099FF;
-            }
-        }
-        
-    }
-
+    background: white;
+    width: 100px;
+    height 100px;
 `
