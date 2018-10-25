@@ -5,64 +5,46 @@ import {
     LightWhite,
     LightWhite_Selected
 } from '../utilities/colors'
+// import PageButton from "./page_button.js"
 
 export default class NavigationBar extends Component {
     render() {
         return (
             <NavBarContainer>
                 <ul>
-                    <li><NavLink exact to="/"></NavLink></li>
-                    <div></div>
-                    <li><NavLink to="/pages/Projects"></NavLink></li>
+                  <NavLink exact to="/">
+                    <PageButton color="red"></PageButton>
+                  </NavLink>
+                  <NavLink to="/pages/Projects">
+                    <PageButton color="green"></PageButton>
+                  </NavLink>
+                  <NavLink to="/pages/Blog">
+                    <PageButton color="yellow"></PageButton>
+                  </NavLink>
                 </ul>
             </NavBarContainer>
         );
     }
 }
 
+const button_diameter = 33;
+const PageButton = styled.div`
+  background-color: ${props => props.color};
+  width: ${button_diameter}px;
+  height: ${button_diameter}px;
+  border-radius: 50%;
+`
 const NavBarContainer = styled.div`
-    background: linear-gradient(90deg, rgba(28, 28, 28, 0) -400.5%, #1E1E1E 50%);
+    background: linear-gradient(90deg, rgba(28, 28, 28, 0) -800.5%, #1E1E1E 30%);
     border-radius: 0px 2px 2px 0px;
-    height: 100vh;
     width: 100px;
+    padding-top: ${button_diameter}px;
     ul{
         display:flex;
         flex-direction: column;
-        height: 100px;
+        height: 200px;
         justify-content: space-around;
         align-items: center;
-        div{
-            width:10px; 
-        }
-        li{
-            list-style-type: none;
-            transition: background-color 0.5s;
-            width:33px;
-            height:33px;
-            border-radius:50%;
-            background: white;
-            a{
-            }
-            /* larger font when landscape */
-            @media screen and (orientation:landscape){
-                a{
-                    font-size: 2em;
-                }
-            }
-            @media screen and (orientation:portrait){
-                a{
-                    font-size: 1.5em;
-                }
-            }
-            /* colors the active page item */
-            .active{
-                background-color: ${LightWhite_Selected};
-                color:white;
-            }
-            :hover{
-                background-color: rgba(255,153,255,0.3);
-                a{color:white;}
-            }
         }
     }
 `

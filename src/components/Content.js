@@ -1,10 +1,9 @@
-
 import React, { Component } from "react";
 import styled from "styled-components";
 import {HashRouter, Route } from "react-router-dom";
 import About from "./pages/AboutMe.js"
 import Projects from "./pages/Projects.js"
-
+import Blog from "./pages/Blog.js"
 export default class Content extends Component {
     render() {
         return (
@@ -13,6 +12,7 @@ export default class Content extends Component {
                 <div >
                     <Route exact path="/" component={About} />
                     <Route path="/pages/Projects" component={Projects} />
+                    <Route path="/pages/Blog" component={Blog} />
                 </div>
             </ContentBox>
             </HashRouter>
@@ -22,7 +22,7 @@ export default class Content extends Component {
 }
 
 const ContentBox = styled.div`
-    background: white;
-    width: 100px;
-    height 100px;
+    background: black;
+    width: 100%;
+    height 100vh;
 `

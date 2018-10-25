@@ -25,12 +25,9 @@ class Main extends Component {
 export default Main;
 
 const MainContainer = styled.div`
+background: white;
+  navBar{
     display:flex;
     flex-direction: row;
-    /* justify-content: center; */
-    /* align-content: center; */
-    width:100vw;
-    height:100vh;
-    background: url(${BackgroundImage}) center center;
+  }
 `
-
