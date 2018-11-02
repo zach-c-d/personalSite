@@ -3,18 +3,29 @@ import {
     HashRouter,
     navBar
 } from "react-router-dom";
-import Navigation from './components/Navigation.js'
+import NavigationBar from './components/Navigation.js'
 import Content from './components/Content.js'
 import styled from 'styled-components'
-import BackgroundImage from './assets/amsterdamStreet.jpg'
+import {
+        background_Red,
+        background_Green,
+        background_Yellow
+      } from './utilities/colors.js';
 
 class Main extends Component {
+  state = {
+    background : background_Red
+  }
+  changeBackground = (set_color) => {
+    this.setState({background : set_color});
+    console.log(this.state.background);
+  }
     render() {
         return (
-            <MainContainer>
+            <MainContainer renderBackground={this.state.background}>
                 <HashRouter>
                     <navBar>
-                        <Navigation></Navigation>
+                        <NavigationBar changeBackground={this.changeBackground}></NavigationBar>
                         <Content></Content>
                     </navBar>
                 </HashRouter>
@@ -25,7 +36,8 @@ class Main extends Component {
 export default Main;
 
 const MainContainer = styled.div`
-background: white;
+
+background: ${props => props.renderBackground};
   navBar{
     display:flex;
     flex-direction: row;

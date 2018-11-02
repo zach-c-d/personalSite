@@ -2,29 +2,29 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import {
-    LightWhite,
-    LightWhite_Selected
-} from '../utilities/colors'
-// import PageButton from "./page_button.js"
+        background_Red,
+        background_Green,
+        background_Yellow
+      } from '../utilities/colors.js'
 
 export default class NavigationBar extends Component {
-    render() {
-        return (
-            <NavBarContainer>
-                <ul>
-                  <NavLink exact to="/">
-                    <PageButton color="red"></PageButton>
-                  </NavLink>
-                  <NavLink to="/pages/Projects">
-                    <PageButton color="green"></PageButton>
-                  </NavLink>
-                  <NavLink to="/pages/Blog">
-                    <PageButton color="yellow"></PageButton>
-                  </NavLink>
-                </ul>
-            </NavBarContainer>
-        );
-    }
+  render(props) {
+    return (
+      <NavBarContainer>
+          <ul>
+            <NavLink exact to="/">
+              <PageButton color="red" onClick={() => this.props.changeBackground(background_Red)}></PageButton>
+            </NavLink>
+            <NavLink to="/pages/Projects">
+              <PageButton color="green" onClick={() => this.props.changeBackground(background_Green)}></PageButton>
+            </NavLink>
+            <NavLink to="/pages/Blog">
+              <PageButton color="yellow" onClick={() => this.props.changeBackground(background_Yellow)}></PageButton>
+            </NavLink>
+          </ul>
+      </NavBarContainer>
+    );
+  }
 }
 
 const button_diameter = 33;

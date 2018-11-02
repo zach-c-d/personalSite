@@ -14,5 +14,5 @@ export default class Projects extends Component{
 const BlogContainer = styled.div`
   width:100%;
   height:100vh;
-  background: linear-gradient(180deg, #E4C000 0%, rgba(0, 0, 0, 0.62) 119.23%);
+
 `

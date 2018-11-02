@@ -4,6 +4,7 @@ import {HashRouter, Route } from "react-router-dom";
 import About from "./pages/AboutMe.js"
 import Projects from "./pages/Projects.js"
 import Blog from "./pages/Blog.js"
+
 export default class Content extends Component {
     render() {
         return (
@@ -22,7 +23,6 @@ export default class Content extends Component {
 }
 
 const ContentBox = styled.div`
-    background: black;
     width: 100%;
     height 100vh;
 `
