@@ -10,7 +10,7 @@ import {
         background_Red,
         background_Green,
         background_Yellow
-      } from './utilities/colors.js';
+      } from './utilities/colors.js'
 
 class Main extends Component {
   state = {
