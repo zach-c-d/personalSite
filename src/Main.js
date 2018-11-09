@@ -36,7 +36,6 @@ class Main extends Component {
 export default Main;
 
 const MainContainer = styled.div`
-
 background: ${props => props.renderBackground};
   navBar{
     display:flex;
