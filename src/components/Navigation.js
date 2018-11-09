@@ -35,9 +35,13 @@ const PageButton = styled.div`
   border-radius: 50%;
 `
 const NavBarContainer = styled.div`
+    position: fixed;
+    z-index: 10;
     background: linear-gradient(90deg, rgba(28, 28, 28, 0) -800.5%, #1E1E1E 30%);
+    box-shadow: 10px 0 10px rgba(0,0,0, 0.33);
     border-radius: 0px 2px 2px 0px;
     width: 100px;
+    height: 100vh;
     padding-top: ${button_diameter}px;
     ul{
         display:flex;
